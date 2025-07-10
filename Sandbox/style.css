@@ -1,0 +1,209 @@
+.grid1{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    width: 33%;
+    height: 60svh;
+}
+
+p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.grid-outline{
+    outline: 1px black solid;
+    position: relative;
+}
+
+
+/* Grid box 1 - vertical wave*/
+#box1{
+    overflow: hidden;
+}
+
+#box1 > .bg{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#242424, #363636);
+}
+
+#box1 > p {
+    display: flex;
+    position: absolute;
+    margin-left: 5%;
+    font-size: 1.2rem;
+    color: grey;
+    
+}
+
+.b1-square{
+    display: flex;
+    position: absolute;
+    margin-top: 15%;
+    width: 135svw;
+    height: 100%;
+    rotate: (2deg);
+    margin-right: 50%;
+    background-color: rgba(88, 88, 88, 0.335);
+    z-index: 2;
+    top: 0;
+    left: 0;
+    animation: b1-skew-transform 6s ease-in-out infinite;
+}
+
+.b1-square2{
+    display: flex;
+    position: absolute;
+    margin-top: 15%;
+    width: 195svw;
+    height: 100%;
+    rotate: (3deg);
+    margin-right: 50%;
+    background-color: rgba(88, 88, 88, 0.335);
+    z-index: 2;
+    top: 0;
+    left: 0;
+    animation: b1-skew2-transform 8s ease-in-out infinite;
+}
+
+/* Grid box 2 - vertical wave*/
+#box2{
+    overflow: hidden;
+}
+
+#box2 > .bg{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#242424, #363636);
+}
+
+#box2 > p {
+    display: flex;
+    position: absolute;
+    margin-left: 5%;
+    font-size: 1.2rem;
+    color: grey;
+    
+}
+
+.b2-square{
+    position: absolute;
+    width: 20svw;
+    height: 200svh;
+    rotate: (-2deg);
+    margin-right: 90svw;
+    background-color: rgba(88, 88, 88, 0.335);
+    z-index: 2;
+    top: 0;
+    left: 0;
+    animation: b2-skew-transform 6s ease-in-out infinite;
+}
+
+.b2-square2{
+    display: flex;
+    position: absolute;
+    width: 7svw;
+    height: 200svh;
+    rotate: (3deg);
+    
+    margin-right: 90svw;
+    background-color: rgba(88, 88, 88, 0.335);
+    z-index: 2;
+    top: 0;
+    left: 0;
+    transform: translateX(80%);
+    animation: b2-skew2-transform 5s ease-in-out infinite;
+}
+
+/* Grid box 3 - vertical wave*/
+
+#box3{
+    overflow: hidden;
+}
+
+#box3 > .bg{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#242424, #363636);
+}
+
+#box3 > p {
+    display: flex;
+    position: absolute;
+    margin-left: 5%;
+    font-size: 1.2rem;
+    color: grey;
+    
+}
+
+.b3-square{
+    position: absolute;
+    width: 20svw;
+    height: 200svh;
+    rotate: (-2deg);
+    margin-right: 90svw;
+    background-color: rgba(88, 88, 88, 0.335);
+    z-index: 2;
+    top: 0;
+    left: 0;
+    animation: b3-skew-transform 6s ease-in-out infinite;
+}
+
+.b3-square2{
+    display: flex;
+    position: absolute;
+    width: 7svw;
+    height: 200svh;
+    rotate: (3deg);
+    
+    margin-right: 90svw;
+    background-color: rgba(88, 88, 88, 0.335);
+    z-index: 2;
+    top: 0;
+    left: 0;
+    transform: translateX(80%);
+    animation: b3-skew2-transform 5s ease-in-out infinite;
+}
+
+/* Grid box 4 - Gradient wave*/
+
+#box4{
+    overflow: hidden;
+}
+
+#box4 > .bg{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#242424, #363636);
+}
+
+#box4 > p {
+    display: flex;
+    position: absolute;
+    margin-left: 5%;
+    font-size: 1.2rem;
+    color: grey;
+    
+}
+
+.bg-gradient{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: gradient-color 8s ease-in-out infinite
+}
+
+@keyframes gradient-color {
+    0%{
+        background-color: rgba(165, 101, 17, 0);
+    }
+    50%{
+        background-color: rgba(96, 7, 87, 0.37);
+    }
+    100%{
+        background-color: rgba(165, 101, 17, 0);
+    }
+    
+}
